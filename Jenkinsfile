@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'grails prod run-app'
+                sh 'grails prod run-app &'
             }
         }
     }
