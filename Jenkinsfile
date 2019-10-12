@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh './gradlew bootRun'
+                sh 'nohup grails prod run-app'
             }
         }
     }
